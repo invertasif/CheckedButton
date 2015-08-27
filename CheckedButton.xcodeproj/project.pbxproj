@@ -14,6 +14,7 @@
 		7887B5181B8DE88A00B0A37F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7887B5161B8DE88A00B0A37F /* LaunchScreen.storyboard */; };
 		7887B5231B8DE88B00B0A37F /* CheckedButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887B5221B8DE88B00B0A37F /* CheckedButtonTests.swift */; };
 		7887B52E1B8DE88B00B0A37F /* CheckedButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887B52D1B8DE88B00B0A37F /* CheckedButtonUITests.swift */; };
+		7887B53C1B8DE8CB00B0A37F /* CheckedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887B53B1B8DE8CB00B0A37F /* CheckedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7887B5291B8DE88B00B0A37F /* CheckedButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckedButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7887B52D1B8DE88B00B0A37F /* CheckedButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedButtonUITests.swift; sourceTree = "<group>"; };
 		7887B52F1B8DE88B00B0A37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7887B53B1B8DE8CB00B0A37F /* CheckedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				7887B50D1B8DE88A00B0A37F /* AppDelegate.swift */,
 				7887B50F1B8DE88A00B0A37F /* ViewController.swift */,
+				7887B53B1B8DE8CB00B0A37F /* CheckedButton.swift */,
 				7887B5111B8DE88A00B0A37F /* Main.storyboard */,
 				7887B5141B8DE88A00B0A37F /* Assets.xcassets */,
 				7887B5161B8DE88A00B0A37F /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7887B5101B8DE88A00B0A37F /* ViewController.swift in Sources */,
+				7887B53C1B8DE8CB00B0A37F /* CheckedButton.swift in Sources */,
 				7887B50E1B8DE88A00B0A37F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +485,7 @@
 				7887B5341B8DE88B00B0A37F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7887B5351B8DE88B00B0A37F /* Build configuration list for PBXNativeTarget "CheckedButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +494,7 @@
 				7887B5371B8DE88B00B0A37F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7887B5381B8DE88B00B0A37F /* Build configuration list for PBXNativeTarget "CheckedButtonUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +503,7 @@
 				7887B53A1B8DE88B00B0A37F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

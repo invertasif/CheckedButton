@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="150" translatesAutoresizingMaskIntoConstraints="NO" id="2u8-TW-iK5" customClass="CheckedButton" customModule="CheckedButton" customModuleProvider="target">
-                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="EpS-xa-WZU"/>
-                                    <constraint firstAttribute="height" constant="50" id="bFX-wk-YLs"/>
+                                    <constraint firstAttribute="width" constant="200" id="EpS-xa-WZU"/>
+                                    <constraint firstAttribute="height" constant="200" id="bFX-wk-YLs"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.85490196078431369" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,7 +38,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2u8-TW-iK5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cn2-Tc-irv"/>
                             <constraint firstItem="2u8-TW-iK5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bb3-jA-DFe"/>

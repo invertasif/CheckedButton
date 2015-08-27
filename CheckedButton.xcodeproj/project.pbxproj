@@ -15,6 +15,7 @@
 		7887B5231B8DE88B00B0A37F /* CheckedButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887B5221B8DE88B00B0A37F /* CheckedButtonTests.swift */; };
 		7887B52E1B8DE88B00B0A37F /* CheckedButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887B52D1B8DE88B00B0A37F /* CheckedButtonUITests.swift */; };
 		7887B53C1B8DE8CB00B0A37F /* CheckedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887B53B1B8DE8CB00B0A37F /* CheckedButton.swift */; };
+		78AF386B1B8F5A67005FADC2 /* checkedbutton.gif in Resources */ = {isa = PBXBuildFile; fileRef = 78AF386A1B8F5A67005FADC2 /* checkedbutton.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7887B52D1B8DE88B00B0A37F /* CheckedButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedButtonUITests.swift; sourceTree = "<group>"; };
 		7887B52F1B8DE88B00B0A37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7887B53B1B8DE8CB00B0A37F /* CheckedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckedButton.swift; sourceTree = "<group>"; };
+		78AF386A1B8F5A67005FADC2 /* checkedbutton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = checkedbutton.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				7887B50F1B8DE88A00B0A37F /* ViewController.swift */,
 				7887B53B1B8DE8CB00B0A37F /* CheckedButton.swift */,
 				7887B5111B8DE88A00B0A37F /* Main.storyboard */,
+				78AF386A1B8F5A67005FADC2 /* checkedbutton.gif */,
 				7887B5141B8DE88A00B0A37F /* Assets.xcassets */,
 				7887B5161B8DE88A00B0A37F /* LaunchScreen.storyboard */,
 				7887B5191B8DE88A00B0A37F /* Info.plist */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78AF386B1B8F5A67005FADC2 /* checkedbutton.gif in Resources */,
 				7887B5181B8DE88A00B0A37F /* LaunchScreen.storyboard in Resources */,
 				7887B5151B8DE88A00B0A37F /* Assets.xcassets in Resources */,
 				7887B5131B8DE88A00B0A37F /* Main.storyboard in Resources */,
@@ -401,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheckedButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = astanciu.CheckedButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheckedButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = astanciu.CheckedButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";

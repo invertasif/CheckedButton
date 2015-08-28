@@ -40,6 +40,19 @@ class CheckedButton: UIView {
             whiteView.backgroundColor = releasedButtonColor
         }
     }
+    
+    @IBInspectable var checked: Bool = false {
+        didSet {
+            animationMode = checked
+            
+            if animationMode {
+                self.whiteView.transform = CGAffineTransformMakeScale(0.01, 0.01)
+                self.image1.transform = CGAffineTransformMakeScale(1, 1)
+            } else {
+                self.image2.transform = CGAffineTransformMakeScale(1, 1)
+            }
+        }
+    }
 
     
     override init(frame: CGRect) {
@@ -94,8 +107,6 @@ class CheckedButton: UIView {
         //button.backgroundColor = UIColor.redColor()
         button.addTarget(self, action: Selector("animation:"), forControlEvents: UIControlEvents.TouchUpInside)
         addSubview(button)
-        
-        
         
     }
     

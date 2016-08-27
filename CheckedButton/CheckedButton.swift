@@ -25,7 +25,7 @@ class CheckedButton: UIView {
     
     @IBInspectable var borderColor: UIColor? {
         didSet {
-            whiteView.layer.borderColor = borderColor?.CGColor
+            whiteView.layer.borderColor = borderColor?.cgColor
         }
     }
     
@@ -46,10 +46,10 @@ class CheckedButton: UIView {
             animationMode = checked
             
             if animationMode {
-                self.whiteView.transform = CGAffineTransformMakeScale(0.01, 0.01)
-                self.image1.transform = CGAffineTransformMakeScale(1, 1)
+                self.whiteView.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+                self.image1.transform = CGAffineTransform(scaleX: 1, y: 1)
             } else {
-                self.image2.transform = CGAffineTransformMakeScale(1, 1)
+                self.image2.transform = CGAffineTransform(scaleX: 1, y: 1)
             }
         }
     }
@@ -71,41 +71,41 @@ class CheckedButton: UIView {
     func setup() {
      
         // add green view
-        greenView = UIView(frame: CGRectMake(0, 0, frame.size.width, frame.size.height))
-        greenView.backgroundColor = UIColor.greenColor()
+        greenView = UIView(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
+        greenView.backgroundColor = UIColor.green
         greenView.layer.cornerRadius = greenView.bounds.size.width/2
         greenView.layer.masksToBounds = true
         addSubview(greenView)
         
         // add first image
-        image1 = UIImageView(frame: CGRectMake(0, 0, frame.size.width/2, frame.size.height/2))
+        image1 = UIImageView(frame: CGRect(x: 0, y: 0, width: frame.size.width/2, height: frame.size.height/2))
         image1.image = UIImage(named: "checked2")
-        image1.center = CGPointMake(CGRectGetMidX(greenView.bounds), CGRectGetMidY(greenView.bounds))
+        image1.center = CGPoint(x: greenView.bounds.midX, y: greenView.bounds.midY)
         image1.layer.cornerRadius = image1.bounds.size.width/2
         image1.layer.masksToBounds = true
         greenView.addSubview(image1)
         
         // add white image
-        whiteView = UIView(frame: CGRectMake(0, 0, frame.size.width, frame.size.height))
-        whiteView.backgroundColor = UIColor.whiteColor()
+        whiteView = UIView(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
+        whiteView.backgroundColor = UIColor.white
         whiteView.layer.cornerRadius = whiteView.bounds.size.width/2
         whiteView.layer.masksToBounds = true
-        whiteView.layer.borderColor = UIColor.lightGrayColor().CGColor
+        whiteView.layer.borderColor = UIColor.lightGray.cgColor
         whiteView.layer.borderWidth = 5
         greenView.addSubview(whiteView)
         
         // add second image
-        image2 = UIImageView(frame: CGRectMake(0, 0, frame.size.width/2, frame.size.height/2))
+        image2 = UIImageView(frame: CGRect(x: 0, y: 0, width: frame.size.width/2, height: frame.size.height/2))
         image2.image = UIImage(named: "checked")
-        image2.center = CGPointMake(CGRectGetMidX(whiteView.bounds), CGRectGetMidY(whiteView.bounds))
+        image2.center = CGPoint(x: whiteView.bounds.midX, y: whiteView.bounds.midY)
         image2.layer.cornerRadius = image2.bounds.size.width/2
         image2.layer.masksToBounds = true
         whiteView.addSubview(image2)
         
         // add button
-        let button = UIButton(frame: CGRectMake(0, 0, frame.size.width, frame.size.height))
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
         //button.backgroundColor = UIColor.redColor()
-        button.addTarget(self, action: Selector("animation:"), forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: Selector(("animation:")), for: UIControlEvents.touchUpInside)
         addSubview(button)
         
     }
@@ -114,16 +114,16 @@ class CheckedButton: UIView {
         
         if animationMode == false {
             
-            UIView.animateWithDuration(0.2, animations: {
+            UIView.animate(withDuration: 0.2, animations: {
                 
-                self.whiteView.transform = CGAffineTransformMakeScale(0.01, 0.01)
+                self.whiteView.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
                 
             })
             
-            self.image1.transform = CGAffineTransformMakeScale(0, 0)
-            UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: UIViewAnimationOptions.CurveLinear, animations: {
+            self.image1.transform = CGAffineTransform(scaleX: 0, y: 0)
+            UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: UIViewAnimationOptions.curveLinear, animations: {
                 
-                self.image1.transform = CGAffineTransformMakeScale(1, 1)
+                self.image1.transform = CGAffineTransform(scaleX: 1, y: 1)
                 
                 }, completion: { (finished: Bool) in
                     
@@ -133,18 +133,18 @@ class CheckedButton: UIView {
             
         } else {
             
-            UIView.animateWithDuration(0.2, delay: 0.0, usingSpringWithDamping: 1, initialSpringVelocity: 7, options: UIViewAnimationOptions.CurveLinear, animations: {
+            UIView.animate(withDuration: 0.2, delay: 0.0, usingSpringWithDamping: 1, initialSpringVelocity: 7, options: UIViewAnimationOptions.curveLinear, animations: {
                 
-                self.whiteView.transform = CGAffineTransformMakeScale(1, 1)
+                self.whiteView.transform = CGAffineTransform(scaleX: 1, y: 1)
                 
                 }, completion: { (finished: Bool) in
                     
             })
             
-            self.image2.transform = CGAffineTransformMakeScale(0, 0)
-            UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: UIViewAnimationOptions.CurveLinear, animations: {
+            self.image2.transform = CGAffineTransform(scaleX: 0, y: 0)
+            UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 10, options: UIViewAnimationOptions.curveLinear, animations: {
                 
-                self.image2.transform = CGAffineTransformMakeScale(1, 1)
+                self.image2.transform = CGAffineTransform(scaleX: 1, y: 1)
                 
                 }, completion: { (finished: Bool) in
                     
